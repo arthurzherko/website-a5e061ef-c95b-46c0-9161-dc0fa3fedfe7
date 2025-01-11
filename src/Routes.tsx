@@ -1,10 +1,1 @@
-import { Routes as RouterRoutes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-
-const Routes = () => (
-  <RouterRoutes>
-    <Route path="/" element={<Home />} />
-  </RouterRoutes>
-);
-
-export default Routes;
+import { Routes as RouterRoutes, Route } from "react-router-dom"; import Home from "./pages/Home"; import Pricing from "./pages/Pricing"; import About from "./pages/About"; import Contact from "./pages/Contact"; const Routes = () => ( <RouterRoutes> <Route path="/" element={<Home />} /> <Route path="/pricing" element={<Pricing />} /> <Route path="/about" element={<About />} /> <Route path="/contact" element={<Contact />} /> </RouterRoutes> ); export default Routes;

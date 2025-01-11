@@ -1,0 +1,1 @@
+export const CONTACT_INFO = { phone: "+7 (999) 123-45-67", email: "info@gamezone.ru", address: "ул. Геймерская, 42", city: "Москва", }; export const SOCIAL_LINKS = { vk: "https://vk.com/gamezone", telegram: "https://t.me/gamezone", instagram: "https://instagram.com/gamezone", };

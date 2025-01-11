@@ -1,16 +1,1 @@
-// Update this page (the content is just a fallback if you fail to update the page)
-
-const Home = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">
-          Start building your amazing project here!
-        </p>
-      </div>
-    </div>
-  );
-};
-
-export default Home;
+import { Button } from "@/components/ui/button"; import { motion } from "framer-motion"; export default function Home() { return ( <div className="space-y-20"> <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden"> <div className="relative z-10 text-center"> <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-6 text-5xl font-bold text-purple-500">Добро пожаловать в GameZone</motion.h1> <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="mb-8 text-xl text-gray-300">Погрузись в мир игр на самом современном оборудовании</motion.p> <Button size="lg" className="bg-purple-600 hover:bg-purple-700">Начать игру</Button> </div> </section> <section className="grid gap-8 md:grid-cols-3"> <div className="rounded-lg border border-purple-500 bg-black/50 p-6 text-center"> <h3 className="mb-4 text-xl font-bold text-purple-500">PlayStation 5</h3> <p className="text-gray-300">Новейшие консоли с полным набором игр</p> </div> <div className="rounded-lg border border-purple-500 bg-black/50 p-6 text-center"> <h3 className="mb-4 text-xl font-bold text-purple-500">Игровые PC</h3> <p className="text-gray-300">Мощные компьютеры с RTX 4090</p> </div> <div className="rounded-lg border border-purple-500 bg-black/50 p-6 text-center"> <h3 className="mb-4 text-xl font-bold text-purple-500">VR-зона</h3> <p className="text-gray-300">Погружение в виртуальную реальность</p> </div> </section> </div> )}
